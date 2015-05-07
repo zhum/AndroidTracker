@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/root_view"
+        >
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+
+            >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:background="#000"
+                >
+            <TextView android:layout_width="0dp"
+                      android:layout_height="40dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:textSize="14sp"
+                      android:padding="4dp"
+                      android:textColor="#fff"
+                      android:id="@+id/start_time"
+                    />
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="40dp"
+                      android:layout_weight="1"
+                      android:textSize="14sp"
+                      android:gravity="center"
+                      android:padding="4dp"
+                      android:textColor="#fff"
+                      android:id="@+id/end_time"
+                    />
+            <View android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#7e7e7e"/>
+
+            <View android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  android:background="@drawable/ic_action_settings"
+                  android:id="@+id/buttonSettings"
+                    />
+
+        </LinearLayout>
+
+        <fragment android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  class="com.google.android.gms.maps.SupportMapFragment"
+                  android:id="@+id/map"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

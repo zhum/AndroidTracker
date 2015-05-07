@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+        >
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+            >
+        <TextView android:layout_width="64dp"
+                  android:layout_height="wrap_content"
+                  android:text="Название:"
+                />
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/nameInput"
+                  android:singleLine="true"
+                  android:maxLength="32"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="10dp"
+            >
+        <TextView android:layout_width="64dp"
+                  android:layout_height="wrap_content"
+                  android:text="Широта:"
+                />
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/latitudeInput"
+                  android:singleLine="true"
+                  android:inputType="numberDecimal"
+                  android:maxLength="8"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="10dp"
+            >
+        <TextView android:layout_width="64dp"
+                  android:layout_height="wrap_content"
+                  android:text="Долгота:"
+                />
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/longitudeInput"
+                  android:singleLine="true"
+                  android:inputType="numberDecimal"
+                  android:maxLength="10"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="10dp"
+            >
+        <TextView android:layout_width="64dp"
+                  android:layout_height="wrap_content"
+                  android:text="Радиус:"
+                />
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/radiusInput"
+                  android:inputType="number"
+                  android:text="50"
+                  android:maxLength="8"
+                />
+    </LinearLayout>
+
+</LinearLayout>

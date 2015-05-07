@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tracker</string>
+    <string name="no_locations">Пока нет записей.</string>
+</resources>
