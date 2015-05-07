@@ -7,7 +7,7 @@ Authors and License
 This project is released under MIT License.
 Autors: Sarimsakov Bakhrom Azimovich, Zhumatiy Sergey (serg@guru.ru)
 
-=== Features ===
+Features
 -------------------
 
 - tracking by GPS or Network
