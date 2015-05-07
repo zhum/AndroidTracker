@@ -1,11 +1,14 @@
-= Android phone tracker ==
+Android phone tracker
+=====================
 
-=== Authors and License ===
+Authors and License
+-------------------
 
 This project is released under MIT License.
 Autors: Sarimsakov Bakhrom Azimovich, Zhumatiy Sergey (serg@guru.ru)
 
 === Features ===
+-------------------
 
 - tracking by GPS or Network
 - store data on remote server
@@ -13,9 +16,8 @@ Autors: Sarimsakov Bakhrom Azimovich, Zhumatiy Sergey (serg@guru.ru)
 - mute time interval
 - opensource!
 
-=== How to install ===
-
-==== Server ====
+Server installing
+-------------------
 
 tracker.rb is the server, written in ruby using Sinatra framework. You can reimplement it in any language.
 Protocol is simple:
@@ -34,13 +36,15 @@ GET / gets list of poins in json format. Attributes are:
 To run server you need ruby, and bundler installed. Just run bundle install and if succeed, run ruby tracker.rb.
 By default it starts listen on 0.0.0.0:4567.
 
-==== Android programms ====
+Android programms compiling
+-------------------
 
 You need to create account at Android developers site, register your project and create google maps API key.
 Place it at Android-tracker-supervisor/app/src/main/AndroidManifest.xml instead 'your-api-key-here'.
 Load projects to android studion and compile. You may be asked for creation keystores, changing settings etc.
 
-=== Use ===
+Use
+-------------------
 
 Traget application must be run on target phone as you can mention. Supervisor app - on any device.
 At first time supervisor device loads many track points and can 'hung'. Be patient and wait. After loading all points it will show track.
@@ -48,7 +52,8 @@ You can add or remove active zones and set notifying for each.
 
 At first use set apropriate server address on both devices!
 
-=== TODO ===
+TODO
+-------------------
 
 - add authorization
 - add target device name changing
